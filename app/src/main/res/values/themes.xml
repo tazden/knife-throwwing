@@ -13,4 +13,8 @@
         <item name="android:statusBarColor">@color/teal_200</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="textColor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textColor">#3affd4</item>
+    </style>
 </resources>
