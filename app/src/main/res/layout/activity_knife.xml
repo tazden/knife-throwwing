@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".KnifeActivity">
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="15dp"
+        android:src="@drawable/home"/>
+    <ImageView
+        android:id="@+id/apple"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/apple_2"/>
+
+    <TextView
+        android:id="@+id/textscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/apple"
+        android:text="0"
+        android:textSize="24sp"
+        android:fontFamily="@font/mont"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toTopOf="@id/apple"
+        app:layout_constraintBottom_toBottomOf="@id/apple"
+        android:textColor="@color/orange"/>
+    <ImageView
+        android:id="@+id/glow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/textscore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/knife_glow"/>
+
+    <LinearLayout
+        android:id="@+id/day13"
+        android:layout_width="wrap_content"
+        android:layout_height="116dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/glow"
+        app:layout_constraintStart_toStartOf="@id/glow"
+        app:layout_constraintTop_toBottomOf="@id/glow">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sword_1" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="10dp"
+
+                android:id="@+id/day2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sword_2" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+
+                android:src="@drawable/sword_3" />
+
+            <ImageView
+                android:id="@+id/okday3"
+
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center|end"
+
+                android:layout_marginTop="32dp"
+                android:src="@drawable/ok"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/day46"
+        android:layout_width="wrap_content"
+        android:layout_height="111dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@id/day13"
+        app:layout_constraintStart_toStartOf="@id/day13"
+        app:layout_constraintTop_toBottomOf="@id/day13">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/day4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sword_4" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day5"
+                android:layout_marginStart="10dp"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sword_5" />
+
+            <ImageView
+                android:id="@+id/okday5"
+
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center|end"
+
+                android:layout_marginTop="32dp"
+                android:src="@drawable/ok"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day6"
+                android:layout_width="100dp"
+                android:layout_marginStart="10dp"
+
+                android:layout_height="100dp"
+                android:src="@drawable/sword_6" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/day79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/day46"
+        app:layout_constraintStart_toStartOf="@id/day13"
+        app:layout_constraintEnd_toEndOf="@id/day13"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/day7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sword_7" />
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+
+                android:src="@drawable/sword_8" />
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+
+                android:src="@drawable/sword_9" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/day79"
+        app:layout_constraintStart_toStartOf="@id/day79"
+        app:layout_constraintEnd_toEndOf="@id/day79"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/day10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sword_10" />
+
+        <ImageView
+            android:id="@+id/okday7"
+
+            android:layout_width="66dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="32dp"
+            android:visibility="invisible"
+
+            android:layout_gravity="center|end"
+            android:src="@drawable/ok"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,10 +10,16 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Dagger"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".PreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KnifeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -24,13 +29,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainMenuActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".GameActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

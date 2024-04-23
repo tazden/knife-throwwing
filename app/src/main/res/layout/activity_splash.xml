@@ -3,27 +3,217 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
     <!--Задний фон-->
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/back"/>
+
 
     <TextView
-        android:id="@+id/tvLogo"
+        android:id="@+id/titleAward"
+        android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/allerta"
-        android:text="Loading..."
+        android:fontFamily="@font/mont"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="15dp"
+        android:text="Ежедневные награды!"
         android:textColor="@color/white"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/mont"
+        android:gravity="center"
+        android:text="Играйте каждый день, чтобы получить более высокие награды!"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="35dp"
+        app:layout_constraintEnd_toEndOf="@id/titleAward"
+        app:layout_constraintStart_toStartOf="@id/titleAward"
+        app:layout_constraintTop_toBottomOf="@id/titleAward" />
+    <LinearLayout
+        android:id="@+id/day13"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        app:layout_constraintStart_toStartOf="@id/info"
+        app:layout_constraintEnd_toEndOf="@id/info">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day1"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/day__1_" />
+
+            <ImageView
+                android:id="@+id/okday1"
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center|end"
+                android:src="@drawable/ok"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day2"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/day__9_" />
+
+            <ImageView
+                android:id="@+id/okday2"
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="32dp"
+                android:visibility="invisible"
+                android:layout_gravity="center|end"
+                android:src="@drawable/ok"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day3"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/day__3_" />
+
+            <ImageView
+                android:id="@+id/okday3"
+
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:visibility="invisible"
+
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center|end"
+                android:src="@drawable/ok"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/day46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/day13"
+        app:layout_constraintStart_toStartOf="@id/day13"
+        app:layout_constraintEnd_toEndOf="@id/day13"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/day4"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/day__4_" />
+
+            <ImageView
+                android:id="@+id/okday4"
+
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:visibility="invisible"
+
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center|end"
+                android:src="@drawable/ok"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day5"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/day__5_" />
+
+            <ImageView
+                android:id="@+id/okday5"
+
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:visibility="invisible"
+
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center|end"
+                android:src="@drawable/ok"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/day6"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:src="@drawable/day__6_" />
+
+            <ImageView
+                android:id="@+id/okday6"
+
+                android:layout_width="66dp"
+                android:layout_height="103dp"
+                android:visibility="invisible"
+
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center|end"
+                android:src="@drawable/ok"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/day46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/day46"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/day7"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:src="@drawable/day__7_" />
+
+        <ImageView
+            android:id="@+id/okday7"
+
+            android:layout_width="66dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="32dp"
+            android:visibility="invisible"
+
+            android:layout_gravity="center|end"
+            android:src="@drawable/ok"/>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/btn_gather"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
